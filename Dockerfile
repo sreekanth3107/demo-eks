@@ -9,7 +9,7 @@ MAINTAINER kishan <kishanbommi@gmail.com>
 #    tree \
 #    vim && \
 #  rm -rf /var/lib/apt/lists/* && apt-get clean && apt-get purge
-COPY demo.war /usr/local/tomcat/webapps/demo.war
+COPY target/demo.war /usr/local/tomcat/webapps/demo.war
 COPY manager.xml /usr/local/tomcat/conf/Catalina/localhost/manager.xml
 RUN rm -rf /usr/local/tomcat/conf/tomcat-users.xml
 COPY tomcat-users.xml /usr/local/tomcat/conf/tomcat-users.xml
