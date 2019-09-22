@@ -1,5 +1,5 @@
 FROM tomcat:8
-MAINTAINER sree1234 <sreekanth3312@gmail.com>
+MAINTAINER sree12345 <sreekanth3312@gmail.com>
 
 # Debugging tools: A few ways to handle debugging tools.
 # Trade off is a slightly more complex volume mount vs keeping the image size down.
