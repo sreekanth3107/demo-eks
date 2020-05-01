@@ -1,0 +1,9 @@
+FROM gitlab.healthcareit.net:8443/imn-platform/container-images/platform-python:3.6.1-alpine
+
+ENV PACKAGE_PREFIX /tmp/python
+WORKDIR /tmp
+
+COPY src .
+RUN zip -r /app.zip * && \
+     rm -r main.py
+CMD ["base64", "/app.zip"]
